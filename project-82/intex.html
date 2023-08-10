@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>project -82 by online tutorials</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="banner">
+            <header>
+                <a href="#" class="logo">Protfolio</a>
+                <div class="toggle">
+
+                </div>
+            </header>
+
+            <img src="man (1).png" class="men">
+
+            <div class="content">
+                <div class="contentBx">
+                    <h4>Hello,</h4>
+                    <h2>I'm a Zakya</h2>
+                    <h3>Professional Web Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem saepe ex adipisci distinctio veritatis esse itaque dolores maiores fugit animi vero architecto, dignissimos reiciendis?</p>
+                    <a href="#">Hire Me</a>
+                    <a href="#">Download CV</a>
+
+                </div>
+            </div>
+
+            <ul class="sci">
+                <li><a href="#"><img src="facebook (7).png" alt=""></a></li>
+                <li><a href="#"><img src="twitter (7).png" alt=""></a></li>
+                <li><a href="#"><img src="instagram (7).png" alt=""></a></li>
+
+            </ul>
+
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <img src="1.png" class="element" data-speed="8">
+            <img src="2.png" class="element" data-speed="6">
+            <img src="3.png" class="element" data-speed="10">
+            <img src="4.png" class="element" data-speed="6">
+
+
+        </section>
+
+
+        <script>
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+
+            toggle.onclick = function(){
+                toggle.classList.toggle('active');
+                banner.classList.toggle('active');
+            }
+
+            function parallax(e){
+                this.querySelectorAll('.element').forEach(layer => {
+                    const x = (window.innerWidth - e.pageX^speed)/100;
+                })
+            }
+        </script>
+    
+    </body>
+</html>
